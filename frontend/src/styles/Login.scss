@@ -1,0 +1,61 @@
+.login-background {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    135deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  height: 100vh;
+  .login-container {
+    // Center login-container
+    margin: auto;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    .login-content {
+      padding: 16px;
+      .text-login {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .login-input {
+        margin: 8px 0;
+      }
+      .btn-login {
+        color: white;
+        background: linear-gradient(
+          135deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(253, 187, 45, 1) 100%
+        );
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .text-forgot-password {
+        font-size: 14px;
+      }
+
+      .social-login {
+        display: flex;
+      }
+      .custom-input-password {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon-eye {
+          position: absolute;
+          right: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

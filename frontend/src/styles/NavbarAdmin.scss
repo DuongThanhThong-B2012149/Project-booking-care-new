@@ -1,0 +1,13 @@
+.navbar-admin {
+  .languages {
+    span {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .language-active {
+      color: #f7d800;
+    }
+  }
+}

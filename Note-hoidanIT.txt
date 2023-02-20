@@ -1,0 +1,28 @@
+ORM: Object relation mapping
+=> Kết nối đến database thông qua các model
+
+- Sequelize cli sẽ 
++ tạo cái model 
++ seeders là tạo cái dự liệu fake
++ migrations tạo các bảng trong array
+
+- Tạo 1 model
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+- trong file src/models/index phải require env và gọi hàm config thì nó mới xài được
+- bỏ mấy cái log mặc định của mysql thì chỗ đó thêm logging:false
+- bỏ mấy cái log khi findAll data thì trong file config.json thêm chỗ mấy cái môi trường logging:false
+
+- Dùng <%=data %> để in data tron ejs ( khi data pass: kiểu này return res.render("homepage.ejs", {
+        data: JSON.stringify(data),
+      }) )
+
+- Model là để khởi tạo đối tượng thôi. Migration sẽ từ đối tượng khởi tạo đó convert qua dạng truy vấn database.
+
+- Cài mvn ở video 40 (#40) để setup version nodejs có thể switch giữa các version 1 cách dễ dàng
+
+{
+  "home-header-speciality": "Medical speciality",
+  "home-header-search-doctor": "Tìm bác sĩ theo chuyên khoa"
+}

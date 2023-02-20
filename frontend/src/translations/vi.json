@@ -1,0 +1,34 @@
+{
+  "HomeHeader.speciality": "Chuyên khoa",
+  "HomeHeader.searchDoctor": "Tìm bác sĩ theo chuyên khoa",
+  "HomeHeader.healthFacility": "Cơ sở y tế",
+  "HomeHeader.selectRoom": "Chọn bệnh viện phòng khám",
+  "HomeHeader.doctor": "Bác sĩ",
+  "HomeHeader.selectDoctor": "Chọn bác sĩ giỏi",
+  "HomeHeader.checkPackage": "Gói khám",
+  "HomeHeader.generalHealthCheck": "Khám sức khỏe tổng quát",
+  "HomeHeader.support": "Hỗ trợ",
+
+  "Banner.titleTop": "NỀN TẢNG Y TẾ",
+  "Banner.titleBottom": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+
+  "Options.specializeCheck": "Khám chuyên khoa",
+  "Options.remoteCheck": "Khám từ xa",
+  "Options.generalCheck": "Khám tổng quát",
+  "Options.medicalCheck": "Xét nghiệm y học",
+  "Options.mentalHealth": "Sức khỏe tinh thần",
+  "Options.dentalCheck": "Khám nha khoa",
+  "Options.surgeryPackage": "Gói phẩu thuật",
+  "Options.medicalProduct": "Sản phẩm y tế",
+  "Options.corporateHealth": "Sức khỏe doanh nghiệp",
+
+  "NavbarAdmin.brandUser": "Người dùng",
+  "NavbarAdmin.manageUser": "Quản lý người dùng",
+  "NavbarAdmin.brandClinic": "Phòng khám",
+  "NavbarAdmin.manageClinic": "Quản lý phòng khám",
+  "NavbarAdmin.brandSpecialty": "Chuyên khoa",
+  "NavbarAdmin.manageSpecialty": "Quản lý chuyên khoa",
+  "NavbarAdmin.brandHandbook": "Cẩm nang",
+  "NavbarAdmin.manageHandbook": "Quản lý cẩm nang",
+  "NavbarAdmin.welcome": "Xin chào,"
+}

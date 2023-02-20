@@ -1,0 +1,34 @@
+{
+  "HomeHeader.speciality": "Medical Speciality",
+  "HomeHeader.searchDoctor": "Find a doctor by specialty",
+  "HomeHeader.healthFacility": "Health facilities",
+  "HomeHeader.selectRoom": "Choose hospital clinic",
+  "HomeHeader.doctor": "Doctor",
+  "HomeHeader.selectDoctor": "Choose a good doctor",
+  "HomeHeader.checkPackage": "Checkup package",
+  "HomeHeader.generalHealthCheck": "General health check",
+  "HomeHeader.support": "Support",
+
+  "Banner.titleTop": "MEDICAL BACKGROUND",
+  "Banner.titleBottom": "COMPREHENSIVE HEALTH CARE",
+
+  "Options.specializeCheck": "Specialized examination",
+  "Options.remoteCheck": "Remote examination",
+  "Options.generalCheck": "General examination",
+  "Options.medicalCheck": "Medical test",
+  "Options.mentalHealth": "Mental health",
+  "Options.dentalCheck": "Dental examination",
+  "Options.surgeryPackage": "Surgery package",
+  "Options.medicalProduct": "Medical products",
+  "Options.corporateHealth": "Corporate health",
+
+  "NavbarAdmin.brandUser": "User",
+  "NavbarAdmin.manageUser": "Manage User",
+  "NavbarAdmin.brandClinic": "Clinic",
+  "NavbarAdmin.manageClinic": "Manage Clinic",
+  "NavbarAdmin.brandSpecialty": "Specialty",
+  "NavbarAdmin.manageSpecialty": "Manage Specialty",
+  "NavbarAdmin.brandHandbook": "Handbook",
+  "NavbarAdmin.manageHandbook": "Manage Handbook",
+  "NavbarAdmin.welcome": "Welcome,"
+}

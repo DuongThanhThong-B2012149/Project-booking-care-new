@@ -1,0 +1,42 @@
+# POST http://localhost:8080/api/login HTTP/1.1
+# content-type: application/json
+
+# {
+#     "email": "test1@gmail.com",
+#     "password": "1"
+# }
+
+# GET http://localhost:8080/api/get-all-users HTTP/1.1
+# content-type: application/json
+
+
+
+# GET http://localhost:8080/api/get-detail-user/1 HTTP/1.1
+# content-type: application/json
+
+POST http://localhost:8080/api/create-new-user HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Thong",
+    "lastName":"Duong",
+    "email": "test@gmail.com",
+    "password": "1",
+    "address":"Can tho",
+    "phoneNumber":"012345678",
+    "gender":0,
+    "roleId":1
+}
+
+# PUT http://localhost:8080/api/edit-user HTTP/1.1
+# content-type: application/json
+
+# {
+#     "id":11,
+#     "firstName":"Duong",
+#     "lastName":"Thongg"
+# }
+
+# DELETE  http://localhost:8080/api/delete-user/5 HTTP/1.1
+# content-type: application/json
+
