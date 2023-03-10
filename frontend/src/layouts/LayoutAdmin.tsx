@@ -1,16 +1,11 @@
-import MavbarAdmin from "components/MavbarAdmin";
-import { ReactNode } from "react";
+import MavbarAdmin from "components/Admin/MavbarAdmin";
+import { Outlet } from "react-router-dom";
 
-interface LayoutAdminProps {
-  children: ReactNode;
-}
-
-const LayoutAdmin = ({ children }: LayoutAdminProps) => {
+const LayoutAdmin = () => {
   return (
     <>
       <MavbarAdmin />
-
-      {children}
+      <Outlet />
     </>
   );
 };

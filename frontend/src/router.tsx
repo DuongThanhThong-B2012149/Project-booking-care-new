@@ -1,49 +1,42 @@
-import Layout from "layouts/Layout";
+import Header from "components/Common/Header";
+import Layout from "layouts/LayoutUser";
 import LayoutAdmin from "layouts/LayoutAdmin";
 import Login from "pages/auth/Login";
 import { Register } from "pages/auth/Register";
 import HomePage from "pages/home";
-import ManagerUser from "pages/manager/ManagerUser";
-import NotFound from "pages/notfound/NotFound";
+import ManagerUser from "pages/manager/user/ManagerUser";
 import ProtectedRouteAuth from "protectedRoute/ProtectedRouteAuth";
 import ProtectedRouteSystem from "protectedRoute/ProtectedRouteSystem";
-import { createBrowserRouter } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
 import { path } from "utils";
 import "./App.css";
+import LayoutUser from "layouts/LayoutUser";
+import AddUser from "pages/manager/user/AddUser";
 
-export const router = createBrowserRouter([
-  {
-    path: path.HOME,
-    element: (
-      <Layout>
-        <HomePage />
-      </Layout>
-    ),
-  },
-  {
-    path: path.LOGIN,
-    element: (
-      <ProtectedRouteAuth>
-        <Login />
-      </ProtectedRouteAuth>
-    ),
-  },
-  {
-    path: path.REGISTER,
-    element: <Register />,
-  },
-  {
-    path: path.MANAGER_USER,
-    element: (
-      <ProtectedRouteSystem>
-        <LayoutAdmin>
-          <ManagerUser />
-        </LayoutAdmin>
-      </ProtectedRouteSystem>
-    ),
-  },
-  {
-    path: path.UNKNOWN,
-    element: <NotFound />,
-  },
-]);
+export const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route element={<LayoutUser />}>
+        <Route path={path.HOME} element={<HomePage />} />
+      </Route>
+      <Route element={<ProtectedRouteAuth />}>
+        <Route path={path.LOGIN} element={<Login />} />
+        <Route path={path.REGISTER} element={<Register />} />
+      </Route>
+      <Route element={<ProtectedRouteAuth />}>
+        <Route path={path.LOGIN} element={<Login />} />
+        <Route path={path.REGISTER} element={<Register />} />
+      </Route>
+      <Route element={<ProtectedRouteSystem />}>
+        <Route element={<LayoutAdmin />}>
+          <Route path={path.MANAGER_USER} element={<ManagerUser />} />
+          <Route path={path.ADD_USER} element={<AddUser />} />
+        </Route>
+      </Route>
+    </Route>
+  )
+);

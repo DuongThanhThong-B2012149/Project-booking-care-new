@@ -30,3 +30,15 @@ export interface User {
   positionId?: string;
   image?: string;
 }
+
+export interface Code {
+  id: number;
+  key: string;
+  type: string;
+  valueEn: string;
+  valueVi: string;
+}
+
+export interface CodeList {
+  genders: Code[];
+}

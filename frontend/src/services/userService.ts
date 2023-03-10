@@ -1,4 +1,4 @@
-import { ListResponse, User } from "interfaces/index";
+import { Code, ListResponse, User } from "interfaces/index";
 import axiosInstance from "utils/axiosInstance";
 interface LoginResponse {
   email: string;
@@ -26,5 +26,9 @@ export const userService = {
 
   deleteUser: (id: number): Promise<ListResponse<User | null>> => {
     return axiosInstance.delete(`/api/delete-user/${id}`);
+  },
+
+  getAllCodes: (type: string): Promise<ListResponse<Code[]>> => {
+    return axiosInstance.get(`/api/allcode?type=${type}`);
   },
 };

@@ -1,16 +1,19 @@
-import ModalEditUser from "components/ModalEditUser";
-import ModalUser from "components/ModalUser";
+import ModalEditUser from "components/Modal/ModalEditUser";
+import ModalUser from "components/Modal/ModalUser";
 import { User } from "interfaces";
 import { useEffect, useState } from "react";
 import { AiFillDelete, AiOutlinePlus } from "react-icons/ai";
 import { BsFillPencilFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { userService } from "services";
+import { path } from "utils";
 import { emitter } from "utils/emitter";
 interface Props {}
 
 const ManagerUser = (props: Props) => {
   const [users, setUsers] = useState<User[]>([]);
+  const navigate = useNavigate();
   const [isShowModal, setIsShowModal] = useState(false);
   const [isShowModalEdit, setIsShowModalEdit] = useState(false);
   const [editUser, setEditUser] = useState<
@@ -92,7 +95,11 @@ const ManagerUser = (props: Props) => {
       <div className="">
         <button
           onClick={() => {
-            setIsShowModal(!isShowModal);
+            // Hide modal
+            // setIsShowModal(!isShowModal);
+
+            // Navigate to add user page
+            navigate(path.ADD_USER);
           }}
           className="btn btn-primary mb-2 d-flex gap-2 align-items-center"
         >

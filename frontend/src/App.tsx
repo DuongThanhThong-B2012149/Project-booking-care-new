@@ -12,6 +12,7 @@ const messages = {
 };
 function App() {
   const { language } = useAppSelector((state) => state.language);
+
   return (
     <IntlProvider
       locale={language}

@@ -30,5 +30,18 @@
   "NavbarAdmin.manageSpecialty": "Quản lý chuyên khoa",
   "NavbarAdmin.brandHandbook": "Cẩm nang",
   "NavbarAdmin.manageHandbook": "Quản lý cẩm nang",
-  "NavbarAdmin.welcome": "Xin chào,"
+  "NavbarAdmin.welcome": "Xin chào,",
+
+  "ManagerUser.addNewUser": "Thêm người dùng mới",
+  "ManagerUser.email": "Email",
+  "ManagerUser.password": "Mật khẩu",
+  "ManagerUser.firstName": "Tên",
+  "ManagerUser.lastName": "Họ",
+  "ManagerUser.phoneNumber": "Số điện thoại",
+  "ManagerUser.address": "Địa chỉ",
+  "ManagerUser.gender": "Giới tính",
+  "ManagerUser.position": "Vị trí",
+  "ManagerUser.roleId": "ID Vai trò",
+  "ManagerUser.image": "Hình ảnh",
+  "ManagerUser.save": "Thêm"
 }

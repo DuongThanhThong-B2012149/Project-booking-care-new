@@ -1,11 +1,12 @@
 export const path = {
-  HOME: "/",
+  HOME: "",
   LOGIN: "/login",
   REGISTER: "/login",
   LOGOUT: "/logout",
   SYSTEM: "/system",
   MANAGER_USER: "/manager-user",
   UNKNOWN: "*",
+  ADD_USER: "/manager-user/add",
 };
 
 export const languages = {

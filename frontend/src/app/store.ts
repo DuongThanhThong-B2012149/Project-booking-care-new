@@ -5,6 +5,7 @@ import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 import storage from "redux-persist/lib/storage";
 import authReducer from "redux/authSlice";
 import languageReducer from "redux/languageSlice";
+import codeReducer from "redux/codeSlice";
 
 import { persistStore } from "redux-persist";
 
@@ -18,6 +19,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   auth: authReducer,
   language: languageReducer,
+  codes: codeReducer,
 });
 
 export type RootReducer = ReturnType<typeof rootReducer>;

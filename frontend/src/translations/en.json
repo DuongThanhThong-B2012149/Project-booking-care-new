@@ -30,5 +30,18 @@
   "NavbarAdmin.manageSpecialty": "Manage Specialty",
   "NavbarAdmin.brandHandbook": "Handbook",
   "NavbarAdmin.manageHandbook": "Manage Handbook",
-  "NavbarAdmin.welcome": "Welcome,"
+  "NavbarAdmin.welcome": "Welcome,",
+
+  "ManagerUser.addNewUser": "Add new user",
+  "ManagerUser.email": "Email",
+  "ManagerUser.password": "Password",
+  "ManagerUser.firstName": "First Name",
+  "ManagerUser.lastName": "Last Name",
+  "ManagerUser.phoneNumber": "Phone Number",
+  "ManagerUser.address": "Address",
+  "ManagerUser.gender": "Gender",
+  "ManagerUser.position": "Position",
+  "ManagerUser.roleId": "Role ID",
+  "ManagerUser.image": "Image",
+  "ManagerUser.save": "Save"
 }
