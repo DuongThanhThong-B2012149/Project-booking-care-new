@@ -18,13 +18,6 @@ interface FormAddUserProps {
   roles: Code[];
 }
 
-const images = [
-  "https://placekitten.com/1500/500",
-  "https://placekitten.com/4000/3000",
-  "https://placekitten.com/800/1200",
-  "https://placekitten.com/1500/1500",
-];
-
 function FormAddUser({
   positions,
   language,
@@ -32,7 +25,6 @@ function FormAddUser({
   loading,
   roles,
 }: FormAddUserProps) {
-  const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [linkImagePreview, setLinkImagePreview] = useState("");
   const handleChangeFile = (e: ChangeEvent<HTMLInputElement>) => {
